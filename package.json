@@ -1,0 +1,31 @@
+{
+  "name": "DPWeb",
+  "version": "3.0.0",
+  "contributors": [
+    {
+      "name": "Andrew Fischer",
+      "email": "aff@sas.upenn.edu"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo 'hello'",
+    "start": "gulp && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "URL"
+  },
+  "bugs": {
+    "url": "URL"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-watch": "^4.3.5",
+    "nunjucks": "^2.1.0"
+  }
+}
