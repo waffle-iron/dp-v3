@@ -15,9 +15,14 @@
   </head>
   <body>
     
+    <header>
+      {% block header %}
+      Header content overridden here.
+      {% endblock %}
+    </header>
+    
     {% block body %}
-    <br><br><br>
-    If you see this, you forgot to override body. <br>
+    Body content overridden here.
     {% endblock %}
 
 
