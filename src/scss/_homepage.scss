@@ -1,3 +1,8 @@
+
+.img-leader {
+  padding-bottom: 15px;
+}
+
 h6.compass {
   font-weight: 400;
   border-bottom: 1px solid #CCC;
@@ -30,6 +35,7 @@ img.compass {
 
 .article-preview {
   font-size: 18px;
+  margin-top: 10px;
 }
 
 .timestamp {
@@ -57,16 +63,54 @@ img.compass {
 }
 
 .section-news {
-  h4 {
-    font-weight: 400;
-  }
   &.section-news-left {
     text-align: right;
   }
 }
 
-.section-opinion {
-  h4 {
-    font-weight: 400;
+.section-video {
+  
+  padding: 0;
+  
+  a {
+    position: relative;
+    color: white;
+    bottom: 100px;
+    left: 40px;
+
+    .fa {
+      font-size: 150%;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
   }
+}
+
+.external-logo {
+  margin-top: 15%;
+}
+
+.frontpage-link {
+  font-family: $font-family-heading;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.1;
+  
+  &.standard-link {
+    font-size: $font-size-h5;
+    
+  }
+  
+  &.large-link {
+    font-size: $font-size-h1;
+    font-weight: 700;
+  }
+  
+  &.medium-link {
+    font-size: $font-size-h3;
+    font-weight: 700;
+  }
+  
 }

@@ -28,6 +28,9 @@ h5 {
 h6 {
   font-size: 14px; }
 
+.img-leader {
+  padding-bottom: 15px; }
+
 h6.compass {
   font-weight: 400;
   border-bottom: 1px solid #CCC;
@@ -53,7 +56,8 @@ img.compass {
   border-left: 1px solid #ccc; }
 
 .article-preview {
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 10px; }
 
 .timestamp {
   font-family: "Arimo";
@@ -72,14 +76,39 @@ img.compass {
 .top-stories .top-story:last-child {
   padding-top: 45px; }
 
-.section-news h4 {
-  font-weight: 400; }
-
 .section-news.section-news-left {
   text-align: right; }
 
-.section-opinion h4 {
-  font-weight: 400; }
+.section-video {
+  padding: 0; }
+  .section-video a {
+    position: relative;
+    color: white;
+    bottom: 100px;
+    left: 40px; }
+    .section-video a .fa {
+      font-size: 150%;
+      vertical-align: middle;
+      padding-right: 10px; }
+
+.external-logo {
+  margin-top: 15%; }
+
+.frontpage-link {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.1; }
+  .frontpage-link.standard-link {
+    font-size: 18px; }
+  .frontpage-link.large-link {
+    font-size: 36px;
+    font-weight: 700; }
+  .frontpage-link.medium-link {
+    font-size: 26px;
+    font-weight: 700; }
 
 nav {
   font-family: "Montserrat", sans-serif;
