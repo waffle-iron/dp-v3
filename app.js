@@ -20,6 +20,6 @@ app.get('/elements', function(req, res) {
   });
 });
 
-http.listen(3000, function(){
+http.listen((process.env.PORT || 3000), function(){
   console.log('Server started on port 3000!');
 });
