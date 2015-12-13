@@ -1,7 +1,71 @@
-.search-field {
-  border-right: 1px solid #777;
+nav {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: 120%;
+
+  .glyphicon {
+    vertical-align: text-bottom;
+    top: -0.5px; //Seriously alignment is driving me insane
+  }
 }
 
-.menu-text {
-  vertical-align: top;
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.search-field {  
+  .glyphicon {
+    margin-left: -10px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: 12.5%;
+    height: 75%;
+    width: 1px;
+    border-right: 1px solid #777;
+  }
+}
+
+.menu {
+  .menu-text {
+    // vertical-align: top;
+  }
+  .glyphicon-menu-hamburger{  
+    padding-right: 5px; 
+   }
+}
+
+.social-icons .fa {
+  padding-left: 5px;
+}
+
+.navbar-subscribe {
+  font-weight: 400;
+  font-size: 14px;
+  background: $brand-primary;
+  text-transform: uppercase;
+  
+  a {
+    color: #fff !important;
+  }
+}
+
+.header-logo {
+  text-align: center;
+  
+  img {
+    width: 700px;
+    display: initial;
+  }
+}
+.header-section {
+  padding-left: 3%;
+  padding-right: 3%;
 }

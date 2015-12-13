@@ -1,25 +1,29 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Arimo:400,400italic,700|Lora:400,400italic,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css);
 body {
   font-family: "Lora", Georgia, "Times New Roman", Times, serif; }
 
-h1, h2, h3, h4, h5, h6, .header-text {
+h1, h2, h3, h4, h5, h6, .header-text, .menu-text {
   font-family: "Montserrat", sans-serif; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  font-weight: 700; }
 
 h2 {
   font-size: 30px; }
 
 h3 {
-  font-size: 26px; }
+  font-size: 26px;
+  font-weight: 700; }
 
 h4 {
   font-size: 21px; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 700; }
 
 h6 {
   font-size: 14px; }
@@ -77,8 +81,53 @@ img.compass {
 .section-opinion h4 {
   font-weight: 400; }
 
-.search-field {
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 120%; }
+  nav .glyphicon {
+    vertical-align: text-bottom;
+    top: -0.5px; }
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto; }
+
+.search-field .glyphicon {
+  margin-left: -10px; }
+
+.search-field:after {
+  content: "";
+  position: absolute;
+  left: 35px;
+  bottom: 12.5%;
+  height: 75%;
+  width: 1px;
   border-right: 1px solid #777; }
 
-.menu-text {
-  vertical-align: top; }
+.menu .glyphicon-menu-hamburger {
+  padding-right: 5px; }
+
+.social-icons .fa {
+  padding-left: 5px; }
+
+.navbar-subscribe {
+  font-weight: 400;
+  font-size: 14px;
+  background: #aa1e22;
+  text-transform: uppercase; }
+  .navbar-subscribe a {
+    color: #fff !important; }
+
+.header-logo {
+  text-align: center; }
+  .header-logo img {
+    width: 700px;
+    display: initial; }
+
+.header-section {
+  padding-left: 3%;
+  padding-right: 3%; }
