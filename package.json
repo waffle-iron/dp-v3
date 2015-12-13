@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo 'hello'",
-    "start": "node app.js"
+    "start": "gulp && node app.js"
   },
   "repository": {
     "type": "git",
