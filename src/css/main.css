@@ -121,6 +121,32 @@ img.compass {
     font-size: 26px;
     font-weight: 700; }
 
+.most-read-list {
+  padding: 0; }
+  .most-read-list ol {
+    list-style: none;
+    font-size: 400%;
+    display: inline-block;
+    line-height: 0; }
+    .most-read-list ol li {
+      padding-bottom: 15px;
+      line-height: 12px; }
+      .most-read-list ol li a {
+        display: inline-block;
+        width: 60%; }
+      .most-read-list ol li .count::before {
+        font-family: "Montserrat", sans-serif;
+        color: #aa1e22;
+        size: 60px;
+        counter-increment: mycounter;
+        content: counter(mycounter) " "; }
+      .most-read-list ol li img {
+        width: 50px;
+        padding: 0;
+        vertical-align: baseline; }
+  .most-read-list:first-of-type {
+    counter-reset: mycounter; }
+
 .section-list h4 {
   font-weight: 700; }
 
@@ -130,6 +156,11 @@ img.compass {
   font-size: 16px;
   color: #000;
   padding-top: 3px; }
+
+.section-etc {
+  padding-bottom: 50px; }
+  .section-etc .current-issue {
+    padding: 1px; }
 
 nav {
   font-family: "Montserrat", sans-serif;
