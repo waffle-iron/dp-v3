@@ -12,9 +12,9 @@
   <body>
     
     <header>
-      {% block header %}
-      Header content overridden here.
-      {% endblock %}
+      {% include 'generic-header.html' %}
+      {%block header%}
+      {%endblock%}
     </header>
     
     {% block body %}
@@ -22,9 +22,9 @@
     {% endblock %}
     
     <footer>
-      {% block footer %}
-      Footer content overridden here.
-      {% endblock %}
+      {%block footer%}
+      {%endblock%}
+      {% include 'generic-footer.html' %}
     </footer>
 
   </body>
