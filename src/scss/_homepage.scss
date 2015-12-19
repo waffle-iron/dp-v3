@@ -132,3 +132,16 @@ img.compass {
   }
   
 }
+
+.section-list{
+  h4 {
+    font-weight: 700;
+  }
+  a {
+    display: block;
+    font-family: $font-family-heading;
+    font-size: 16px;
+    color: #000;
+    padding-top: 3px;
+  }
+}

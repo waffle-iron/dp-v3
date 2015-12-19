@@ -121,6 +121,16 @@ img.compass {
     font-size: 26px;
     font-weight: 700; }
 
+.section-list h4 {
+  font-weight: 700; }
+
+.section-list a {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #000;
+  padding-top: 3px; }
+
 nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -171,3 +181,16 @@ nav {
 .header-section {
   padding-left: 3%;
   padding-right: 3%; }
+
+.section-menu {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  margin-top: -20px;
+  margin-bottom: 20px; }
+  .section-menu h4 {
+    font-weight: 700; }
