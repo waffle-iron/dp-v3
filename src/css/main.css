@@ -69,6 +69,12 @@ img.compass {
   text-align: center;
   padding-bottom: 5px;
   border-bottom: 7px solid #000; }
+  .frontpage-section.frontpage-section-inverse {
+    border-bottom: none;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    font-size: 180%; }
 
 .top-stories h3 {
   margin-top: 0; }
@@ -91,8 +97,13 @@ img.compass {
       vertical-align: middle;
       padding-right: 10px; }
 
-.external-logo {
-  margin-top: 15%; }
+.external-border {
+  border-left: 7px solid #000;
+  padding-left: 0;
+  padding-right: 0; }
+
+.section-utb {
+  padding-top: 15px; }
 
 .frontpage-link {
   font-family: "Montserrat", sans-serif;
