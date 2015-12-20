@@ -1,3 +1,21 @@
 footer {
   background-color: #f8f8f8;
 }
+
+.footer-nav {
+  text-align: center;
+  color: #585858;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  font-family: $font-family-sans-serif;
+  color: #585858;
+  text-align: center;
+  
+  img {
+    display: inline;
+    width: 100px;
+    margin: 15px
+  }
+}

@@ -228,3 +228,17 @@ nav {
 
 footer {
   background-color: #f8f8f8; }
+
+.footer-nav {
+  text-align: center;
+  color: #585858;
+  margin-bottom: 20px; }
+
+.footer-copy {
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  color: #585858;
+  text-align: center; }
+  .footer-copy img {
+    display: inline;
+    width: 100px;
+    margin: 15px; }
