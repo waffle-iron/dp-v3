@@ -155,7 +155,8 @@ img.compass {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #000;
-  padding-top: 3px; }
+  padding-top: 3px;
+  font-weight: 400; }
 
 .section-etc {
   padding-bottom: 50px; }
@@ -189,8 +190,21 @@ nav {
   width: 1px;
   border-right: 1px solid #777; }
 
-.menu .glyphicon-menu-hamburger {
-  padding-right: 5px; }
+.menu-toggle {
+  cursor: pointer; }
+  .menu-toggle:not(.closed) {
+    background-color: #000; }
+    .menu-toggle:not(.closed) span {
+      color: #fff; }
+    .menu-toggle:not(.closed)::after {
+      content: "";
+      position: absolute;
+      width: 120vw;
+      margin-left: -10vw;
+      height: 7px;
+      background-color: black; }
+  .menu-toggle .glyphicon-menu-hamburger {
+    padding-right: 5px; }
 
 .social-icons .fa {
   padding-left: 5px; }
@@ -213,18 +227,42 @@ nav {
   padding-left: 3%;
   padding-right: 3%; }
 
-.section-menu {
+.section-dropdown {
   width: 100%;
   background-color: #f8f8f8;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   margin: 0;
-  margin-top: -20px;
-  margin-bottom: 20px; }
-  .section-menu h4 {
+  margin-top: -10px;
+  margin-bottom: 25px;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  max-height: 1000px;
+  overflow: hidden; }
+  .section-dropdown.closed {
+    overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out; }
+  .section-dropdown h4 {
     font-weight: 700; }
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.affix + .container-fluid {
+  padding-top: 70px; }
+
+.leaderboards {
+  padding-top: 70px; }
 
 footer {
   background-color: #f8f8f8; }
