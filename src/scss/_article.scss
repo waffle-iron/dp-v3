@@ -1,5 +1,28 @@
 article {
   border-right: 1px solid #e7e7e7;
+
+  .author-bio {
+    border-top: 7px solid #000;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-family: $font-family-heading;
+  }
+  
+  .article-metadata {
+    font-family: $font-family-heading;
+    margin-bottom: 15px;
+    
+    .byline {
+      font-weight: 700;
+      border-right: 1px solid $gray;
+      padding-right: 10px;
+      margin-right: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+  }
+  
 }
 
 aside {
