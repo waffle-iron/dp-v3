@@ -26,6 +26,25 @@ article {
     }
   }
   
+  // figure:not(:first-child):not(#fb-root):not(.twitter-tweet){
+  //   display: none;
+  // }
+  
+  blockquote {
+    &.blockquote-aside {
+      width: 25%;
+      border-left: none;
+      float: left;
+      position: relative;
+      left: -25px;
+      margin-right: -15px;
+      border-top: 5px solid #000;
+      color: $brand-primary;
+      font-family: $font-family-heading;
+      padding: 0;
+      padding-top: 5px;
+    }
+  }
 }
 
 aside {

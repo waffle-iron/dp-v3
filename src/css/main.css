@@ -200,6 +200,19 @@ article .article-metadata {
     padding-bottom: 5px;
     margin-bottom: 15px; }
 
+article blockquote.blockquote-aside {
+  width: 25%;
+  border-left: none;
+  float: left;
+  position: relative;
+  left: -25px;
+  margin-right: -15px;
+  border-top: 5px solid #000;
+  color: #aa1e22;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  padding-top: 5px; }
+
 aside {
   padding-top: 45vh; }
 
@@ -319,6 +332,8 @@ nav {
 
 footer {
   background-color: #f8f8f8; }
+  footer .container {
+    padding-top: 0; }
 
 .footer-nav {
   text-align: center;
