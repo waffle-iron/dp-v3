@@ -13,3 +13,6 @@ secBtn.addEventListener("click", function(){
     dropdown.classList.toggle('closed');
     secBtn.classList.toggle('closed');
 });
+
+
+var tweets = document.querySelector('[id^="twitter-"]');

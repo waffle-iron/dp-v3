@@ -180,30 +180,37 @@ img.compass {
   .section-etc .current-issue {
     padding: 1px; }
 
-article {
+.article-container {
   border-right: 1px solid #e7e7e7; }
-  article .author-bio {
+  .article-container .author-bio {
     border-top: 7px solid #000;
     margin-top: 5px;
     padding-top: 5px;
     font-family: "Montserrat", sans-serif; }
-  article .article-metadata {
-    font-family: "Montserrat", sans-serif;
+
+article .article-metadata {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px; }
+  article .article-metadata .byline {
+    font-weight: 700;
+    border-right: 1px solid #555555;
+    padding-right: 10px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 15px; }
-    article .article-metadata .byline {
-      font-weight: 700;
-      border-right: 1px solid #555555;
-      padding-right: 10px;
-      margin-right: 5px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-bottom: 15px; }
 
 aside {
   padding-top: 45vh; }
 
 .article-ad-unit {
   padding-bottom: 15px; }
+
+.entry-content .twitter-tweet-rendered {
+  max-width: 100% !important; }
+
+.twitter-tweet, .EmbeddedTweet, .js-clickToOpenTarget, div[data-iframe-title~="Tweet"] {
+  max-width: 100% !important; }
 
 nav {
   font-family: "Montserrat", sans-serif;

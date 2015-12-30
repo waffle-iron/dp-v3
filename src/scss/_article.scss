@@ -1,12 +1,15 @@
-article {
+.article-container {
   border-right: 1px solid #e7e7e7;
-
+  
   .author-bio {
     border-top: 7px solid #000;
     margin-top: 5px;
     padding-top: 5px;
     font-family: $font-family-heading;
   }
+}
+
+article {
   
   .article-metadata {
     font-family: $font-family-heading;
@@ -32,3 +35,15 @@ aside {
 .article-ad-unit {
   padding-bottom: 15px;
 }
+
+//Social Stuff
+
+// Make tweets responsive
+.entry-content .twitter-tweet-rendered {
+    max-width: 100% !important;
+}
+.twitter-tweet, .EmbeddedTweet, .js-clickToOpenTarget, div[data-iframe-title~="Tweet"] {
+  max-width: 100% !important;
+}
+
+// Comments
