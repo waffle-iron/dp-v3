@@ -28,6 +28,23 @@ h5 {
 h6 {
   font-size: 14px; }
 
+article {
+  font-size: 18px;
+  line-height: 175%; }
+
+figcaption {
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #555555;
+  padding-bottom: 15px; }
+
+p {
+  padding-bottom: 20px; }
+
+.container {
+  padding-top: 70px; }
+
 .img-leader {
   padding-bottom: 15px; }
 
@@ -162,6 +179,15 @@ img.compass {
   padding-bottom: 50px; }
   .section-etc .current-issue {
     padding: 1px; }
+
+article {
+  border-right: 1px solid #e7e7e7; }
+
+aside {
+  padding-top: 45vh; }
+
+.article-ad-unit {
+  padding-bottom: 15px; }
 
 nav {
   font-family: "Montserrat", sans-serif;

@@ -15,8 +15,8 @@ app.get('/', function(req, res) {
   });
 });
 
-app.get('/elements', function(req, res) {
-  res.render('elements.html', {
+app.get('/article', function(req, res) {
+  res.render('article.html', {
   });
 });
 
