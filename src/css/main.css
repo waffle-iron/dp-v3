@@ -114,6 +114,9 @@ img.compass {
       vertical-align: middle;
       padding-right: 10px; }
 
+.external-logo {
+  width: 100%; }
+
 .external-border {
   border-left: 7px solid #000;
   padding-left: 0;
