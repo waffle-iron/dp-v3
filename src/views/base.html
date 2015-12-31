@@ -38,13 +38,13 @@
 
   <body>
     <header>
-      {% include 'generic-header.html' %} {%block header%} {%endblock%}
+      {% include 'includes/generic-header.html' %} {%block header%} {%endblock%}
     </header>
 
     {% block body %} Body content overridden here. {% endblock %}
 
     <footer>
-      {%block footer%} {%endblock%} {% include 'generic-footer.html' %}
+      {%block footer%} {%endblock%} {% include 'includes/generic-footer.html' %}
     </footer>
 
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script> -->

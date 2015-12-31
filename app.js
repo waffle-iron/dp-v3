@@ -5,8 +5,9 @@ var http      = require('http').Server(app);
 
 app.use(express.static(__dirname + '/src'));
 
-nunjucks.configure('src/views', {
+nunjucks.configure(['src/views/','src/views/includes/'], {
   autoescape: true,
+  watch     : true,
   express   : app
 });
 
