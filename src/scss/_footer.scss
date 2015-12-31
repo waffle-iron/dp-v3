@@ -1,8 +1,24 @@
 footer {
   background-color: #f8f8f8;
+  font-family: $font-family-heading;
+  
   .container {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
+  
+  .footer-cta {
+    font-size: 18px;
+    padding-right: 25px;
+    border-right: 1px solid $gray;
+  }
+  
+  .footer-social {
+    font-size: 32px;
+    color: #000;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+  }
+  
 }
 
 .footer-nav {

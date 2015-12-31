@@ -2,7 +2,9 @@ nav {
   font-family: $font-family-heading;
   font-weight: 700;
   font-size: 120%;
-
+  user-select: none;    
+  -webkit-user-select: none;
+  
   .glyphicon {
     vertical-align: text-bottom;
     top: -0.5px; //Seriously alignment is driving me insane
@@ -35,6 +37,16 @@ nav {
 
 .menu-toggle {
   cursor: pointer;
+  max-height: 50px;
+  transition: all 250ms ease-in-out;
+  
+  &::after {
+    transition: all 0.25s ease-in-out;
+    content: "";
+    margin-left: -10vw;
+    height: 0;
+    opacity: 0;
+    }
   
   &:not(.closed) {
     background-color: #000;
@@ -44,7 +56,9 @@ nav {
     }
     
     &::after {
+      transition: all 0.25s ease-in-out;
       content: "";
+      opacity: 1;
       position: absolute;
       width: 120vw;
       margin-left: -10vw;

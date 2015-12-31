@@ -42,7 +42,7 @@ figcaption {
 p {
   padding-bottom: 20px; }
 
-.container {
+.container:first-child {
   padding-top: 70px; }
 
 .img-leader {
@@ -188,30 +188,31 @@ img.compass {
     padding-top: 5px;
     font-family: "Montserrat", sans-serif; }
 
-article .article-metadata {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 15px; }
-  article .article-metadata .byline {
-    font-weight: 700;
-    border-right: 1px solid #555555;
-    padding-right: 10px;
-    margin-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+article {
+  padding-top: 75px; }
+  article .article-metadata {
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 15px; }
-
-article blockquote.blockquote-aside {
-  width: 25%;
-  border-left: none;
-  float: left;
-  position: relative;
-  left: -25px;
-  margin-right: -15px;
-  border-top: 5px solid #000;
-  color: #aa1e22;
-  font-family: "Montserrat", sans-serif;
-  padding: 0;
-  padding-top: 5px; }
+    article .article-metadata .byline {
+      font-weight: 700;
+      border-right: 1px solid #555555;
+      padding-right: 10px;
+      margin-right: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 15px; }
+  article blockquote.blockquote-aside {
+    width: 25%;
+    border-left: none;
+    float: left;
+    position: relative;
+    left: -25px;
+    margin-right: -15px;
+    border-top: 5px solid #000;
+    color: #aa1e22;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    padding-top: 5px; }
 
 aside {
   padding-top: 45vh; }
@@ -228,7 +229,9 @@ aside {
 nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 120%; }
+  font-size: 120%;
+  user-select: none;
+  -webkit-user-select: none; }
   nav .glyphicon {
     vertical-align: text-bottom;
     top: -0.5px; }
@@ -253,13 +256,23 @@ nav {
   border-right: 1px solid #777; }
 
 .menu-toggle {
-  cursor: pointer; }
+  cursor: pointer;
+  max-height: 50px;
+  transition: all 250ms ease-in-out; }
+  .menu-toggle::after {
+    transition: all 0.25s ease-in-out;
+    content: "";
+    margin-left: -10vw;
+    height: 0;
+    opacity: 0; }
   .menu-toggle:not(.closed) {
     background-color: #000; }
     .menu-toggle:not(.closed) span {
       color: #fff; }
     .menu-toggle:not(.closed)::after {
+      transition: all 0.25s ease-in-out;
       content: "";
+      opacity: 1;
       position: absolute;
       width: 120vw;
       margin-left: -10vw;
@@ -331,9 +344,19 @@ nav {
   padding-top: 70px; }
 
 footer {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  font-family: "Montserrat", sans-serif; }
   footer .container {
-    padding-top: 0; }
+    padding-top: 0 !important; }
+  footer .footer-cta {
+    font-size: 18px;
+    padding-right: 25px;
+    border-right: 1px solid #555555; }
+  footer .footer-social {
+    font-size: 32px;
+    color: #000;
+    padding-bottom: 25px;
+    letter-spacing: 5px; }
 
 .footer-nav {
   text-align: center;
