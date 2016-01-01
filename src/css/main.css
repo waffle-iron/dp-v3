@@ -204,6 +204,10 @@ article {
       padding-top: 5px;
       padding-bottom: 5px;
       margin-bottom: 15px; }
+  article .img-gallery {
+    text-align: center;
+    display: inline;
+    width: 90%; }
   article blockquote.blockquote-aside {
     width: 25%;
     border-left: none;

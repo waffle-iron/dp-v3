@@ -1,0 +1,36 @@
+{% extends "base.html" %} {%block body%}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 article-container">
+      <article>
+        <div class="article-metadata">
+          <h5>Category</h5>
+          <h1 class="article-title">Captain MERT</h1>
+        </div>
+        <figure>
+          <span class="fa fa-chevron-left"></span>
+          <img src="https://placehold.it/1200x800?text=4:3" class="img img-responsive img-gallery" />
+          <span class="fa fa-chevron-right"></span>
+          <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </figcaption>
+        </figure>
+        <div class="article-metadata">
+          <span class="byline">By Lorem Ipsum</span>
+          <span class="dateline">January 1<sup>st</sup> 1970</span>
+        </div>
+      </article>
+      <button type="button" class="btn btn-secondary">
+        <i class="fa fa-comments"></i>
+        <span class="fb-comments-count" data-href="http://dp-v3.herokuapp.com/dptestarticle002"></span>
+        Comments
+      </button>
+      <div class="fb-comments" data-href="http://dp-v3.herokuapp.com/dptestarticle002" data-width="100%" data-numposts="15"></div>
+    </div>
+    <aside class="col-sm-4">
+      <img src="http://placehold.it/300x250" class="article-ad-unit" />
+      <img src="http://placehold.it/300x250" class="article-ad-unit" />
+    </aside>
+  </div>
+</div>
+{%endblock%}
