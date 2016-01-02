@@ -46,6 +46,7 @@ img.compass {
   font-style: italic;
   font-size: 13px;
   color: #ccc;
+  padding-bottom: 3px;
 }
 
 
@@ -204,12 +205,25 @@ img.compass {
 }
 
 .section-story-block {
-  width: 100%;
+  overflow: hidden; //Fixes zero width issue
+  border-bottom: 5px solid #000;
   
-  .article-preview:not(:first-child) {
-    padding-top: 25px;
-    padding-bottom: 15px;
-    border-bottom: 5px solid #000;
+  .story-block-img {
+    padding-left: 0;
+  } 
+  
+  &:not(:first-child){
+    padding-bottom: 5px;
+    padding-top: 15px;
   }
+  
+  &:last-child {
+    border: none;
+  }
+  
+  // .article-preview:not(:first-child) {
+  //   padding-top: 25px;
+  //   padding-bottom: 15px;
+  // }
   
 }

@@ -80,7 +80,8 @@ img.compass {
   font-family: "Arimo";
   font-style: italic;
   font-size: 13px;
-  color: #ccc; }
+  color: #ccc;
+  padding-bottom: 3px; }
 
 .frontpage-section {
   text-align: center;
@@ -191,11 +192,15 @@ img.compass {
     padding: 1px; }
 
 .section-story-block {
-  width: 100%; }
-  .section-story-block .article-preview:not(:first-child) {
-    padding-top: 25px;
-    padding-bottom: 15px;
-    border-bottom: 5px solid #000; }
+  overflow: hidden;
+  border-bottom: 5px solid #000; }
+  .section-story-block .story-block-img {
+    padding-left: 0; }
+  .section-story-block:not(:first-child) {
+    padding-bottom: 5px;
+    padding-top: 15px; }
+  .section-story-block:last-child {
+    border: none; }
 
 .article-container {
   border-right: 1px solid #e7e7e7; }
