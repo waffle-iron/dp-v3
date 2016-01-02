@@ -31,6 +31,11 @@ app.get('/section', function(req, res) {
   });
 });
 
+app.get('/subsection', function(req, res) {
+  res.render('subsection.html', {
+  });
+});
+
 http.listen((process.env.PORT || 3000), function(){
   console.log('Server started on port 3000!');
 });
