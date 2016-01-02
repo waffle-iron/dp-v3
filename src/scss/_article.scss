@@ -62,6 +62,31 @@ aside {
   padding-bottom: 15px;
 }
 
+
+.section-container {
+  padding-top: 70px;
+  
+  .frontpage-section {
+    text-align: left;
+  }
+  
+  .push-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: justify;
+    width: 100%;
+  }
+  .push-justify:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+
+  .subsection-link {
+    font-family: $font-family-heading;
+  }
+}
+
 //Social Stuff
 
 // Make tweets responsive

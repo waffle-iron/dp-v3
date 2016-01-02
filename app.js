@@ -26,6 +26,11 @@ app.get('/gallery', function(req, res) {
   });
 });
 
+app.get('/section', function(req, res) {
+  res.render('section.html', {
+  });
+});
+
 http.listen((process.env.PORT || 3000), function(){
   console.log('Server started on port 3000!');
 });

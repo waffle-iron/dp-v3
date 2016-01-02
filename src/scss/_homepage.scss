@@ -119,21 +119,25 @@ img.compass {
   font-weight: 400;
   line-height: 1.1;
   
-  &.standard-link {
-    font-size: $font-size-h5;
-    
-  }
+}
+
+.standard-link {
+  font-family: $font-family-heading;
+  font-size: $font-size-h5;
   
-  &.large-link {
-    font-size: $font-size-h1;
-    font-weight: 700;
-  }
-  
-  &.medium-link {
-    font-size: $font-size-h3;
-    font-weight: 700;
-  }
-  
+}
+
+.large-link {
+  font-family: $font-family-heading;
+  font-size: $font-size-h1;
+  font-weight: 700;
+}
+
+.medium-link {
+  font-family: $font-family-heading;
+  font-size: $font-size-h3;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 // .section-most-read {
@@ -197,4 +201,15 @@ img.compass {
   .current-issue {
     padding: 1px;
   }
+}
+
+.section-story-block {
+  width: 100%;
+  
+  .article-preview:not(:first-child) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #000;
+  }
+  
 }

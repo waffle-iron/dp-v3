@@ -132,14 +132,21 @@ img.compass {
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1.1; }
-  .frontpage-link.standard-link {
-    font-size: 18px; }
-  .frontpage-link.large-link {
-    font-size: 36px;
-    font-weight: 700; }
-  .frontpage-link.medium-link {
-    font-size: 26px;
-    font-weight: 700; }
+
+.standard-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px; }
+
+.large-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700; }
+
+.medium-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 120%; }
 
 .most-read-list {
   padding: 0; }
@@ -182,6 +189,13 @@ img.compass {
   padding-bottom: 50px; }
   .section-etc .current-issue {
     padding: 1px; }
+
+.section-story-block {
+  width: 100%; }
+  .section-story-block .article-preview:not(:first-child) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #000; }
 
 .article-container {
   border-right: 1px solid #e7e7e7; }
@@ -226,6 +240,22 @@ aside {
 
 .article-ad-unit {
   padding-bottom: 15px; }
+
+.section-container {
+  padding-top: 70px; }
+  .section-container .frontpage-section {
+    text-align: left; }
+  .section-container .push-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: justify;
+    width: 100%; }
+  .section-container .push-justify:after {
+    content: "";
+    display: inline-block;
+    width: 100%; }
+  .section-container .subsection-link {
+    font-family: "Montserrat", sans-serif; }
 
 .entry-content .twitter-tweet-rendered {
   max-width: 100% !important; }
