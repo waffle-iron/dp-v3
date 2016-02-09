@@ -21,7 +21,7 @@ nav {
 }
 
 .search-field {  
-  .glyphicon {
+  .fa {
     margin-left: -10px;
   }
   &:after {
@@ -67,7 +67,7 @@ nav {
     }
   }
   
-  .glyphicon-menu-hamburger{  
+  .fa-bars{  
     padding-right: 5px; 
    }
 }
@@ -77,7 +77,7 @@ nav {
 }
 
 .navbar-subscribe {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   background: $brand-primary;
   text-transform: uppercase;
