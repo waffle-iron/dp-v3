@@ -20,6 +20,7 @@
     "url": "URL"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.3.6",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",
@@ -27,6 +28,5 @@
     "gulp-watch": "^4.3.5",
     "nunjucks": "^2.1.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
